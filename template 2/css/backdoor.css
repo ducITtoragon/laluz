@@ -1,0 +1,38 @@
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJiYWNrZG9vci5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIiJdLCJmaWxlIjoiYmFja2Rvb3IuY3NzIn0= */
+.prod-it .inner .bg{
+    height: 65%;
+}
+
+.prod-it .inner .wr-info .tt a{
+    text-transform: uppercase;
+}
+
+.prod-heading-right .btn-flt{
+    display: none;
+}
+
+.fixed-nav .fixed-nav-item:nth-child(2) .link-items{
+    height: 3.2rem;
+}
+
+.cart-total .val{
+    font-weight: 700;
+}
+
+.des-cat{
+    color: #414141;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.prod-intro{
+    color: #414141 !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+@media (max-width:575px) {
+    .magnify > .magnify-lens {
+        display: none !important;
+    }
+}

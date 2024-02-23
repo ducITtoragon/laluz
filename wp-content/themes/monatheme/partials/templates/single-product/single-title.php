@@ -1,0 +1,1 @@
+<h1 class="tt-prod-dt"><?php the_title(); ?></h1>

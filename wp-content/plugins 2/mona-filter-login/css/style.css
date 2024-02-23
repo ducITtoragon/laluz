@@ -1,0 +1,209 @@
+.custom-checkbox {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.custom-checkbox .checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+        line-height: 20px;
+    text-align: center;
+}
+.custom-checkbox .checkmark::after {
+    content: "✔";
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    display: none;
+}
+.custom-checkbox input:hover ~ .checkmark {
+    background-color: #3498db;
+}
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #3498db;
+}
+.custom-checkbox input:checked ~ .checkmark::after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+.get-password-form,
+.login-signup-popup {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+}
+.login-signup-popup .tab-nav {
+    margin-bottom: 30px;
+}
+.login-signup-popup .tab-nav ul {
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+.login-signup-popup .tab-nav li {
+    display: inline-block;
+    cursor: pointer;
+}
+.login-signup-popup .tab-nav li.current {
+    color: #3498db;
+}
+.login-signup-popup .tab-nav .or {
+    font-size: 16px;
+    color: #555;
+}
+.login-signup-form {
+    margin-bottom: 20px;
+}
+.login-signup-form .f-group + .f-group {
+    margin-top: 15px;
+}
+.login-signup-form .f-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.login-signup-form .label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.login-signup-form .label i {
+    display: inline-block;
+    margin-right: 5px;
+}
+.submit-btn {
+    padding: 10px 30px;
+    background-color: #cb1f30;
+    border: 1px solid #cb1f30;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    outline: 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #fff;
+    color: #cb1f30;
+}
+.flex-justify-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        margin-bottom: 20px;
+}
+.login-signup-form a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.login-signup-form a:hover {
+    color: #3498db;
+}
+.show-pass-f-group {
+    position: relative;
+}
+.show-pass-f-group .show-pass {
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+.datepickers-container {
+    z-index: 9999;
+}
+.login-signup-form textarea.f-control{
+    height: 100px;
+}
+.login-signup-popup{
+    max-width: 100%;
+    position: relative;
+}
+.login-signup-popup .mona-close-popup{
+     position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.red{
+    color: red;
+}
+.mona-has-ajax:after{
+        display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f10c";
+    animation: fa-spin 2s infinite linear;
+    font-size: 0;
+    margin-left: 5px;
+}
+.loading .mona-has-ajax:after,
+.mona-has-ajax.loading:after{
+    font-size: inherit; 
+}
+#mona-longin-form-wrap{
+    display: none;
+}
+.login-form-wrapper {
+    width: 43%;
+}
+
+.login-form-wrapper .md-title.login-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.login-form-wrapper  p.login-desc {
+    margin-bottom: 15px;
+} 
+
+p.foget-pass-link {
+    margin-top: 10px;
+}
+.submit-btn {
+    margin-top: 15px;
+}
